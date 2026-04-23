@@ -5,7 +5,7 @@ A RESTful API for Smart Campus sensor and resource management, built with Java J
 
 **Student Name:** Kavindu Abeysinghe  
 **Student ID:** w2153025/20241210
-**Module:** 5COSC022W - Client-Server Architectures  
+**Module:** 5COSC022W - Client Server Architectures  
 **Coursework Title:** Smart Campus Sensor & Room Management API
 
 ## 1. Project Overview
