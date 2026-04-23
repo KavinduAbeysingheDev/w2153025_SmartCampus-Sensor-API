@@ -1,0 +1,15 @@
+package com.kavindu.smartcampus.config;
+
+import org.glassfish.jersey.server.ResourceConfig;
+
+import javax.ws.rs.ApplicationPath;
+
+@ApplicationPath("/api/v1")
+public class SmartCampusApplication extends ResourceConfig {
+
+    public SmartCampusApplication() {
+        packages("com.kavindu.smartcampus.resource",
+                 "com.kavindu.smartcampus.mapper",
+                 "com.kavindu.smartcampus.filter");
+    }
+}
