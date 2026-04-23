@@ -1,0 +1,72 @@
+package com.kavindu.smartcampus.model;
+
+public class Sensor {
+    private String id;
+    private String type;
+    private String status;
+    private double currentValue;
+    private String roomId;
+
+    public Sensor() {
+    }
+
+    public Sensor(String id, String type, String status, double currentValue, String roomId) {
+        this.id = id;
+        this.type = type;
+        this.status = status;
+        this.currentValue = currentValue;
+        this.roomId = roomId;
+    }
+
+    public Sensor(Sensor other) {
+        this.id = other.id;
+        this.type = other.type;
+        this.status = other.status;
+        this.currentValue = other.currentValue;
+        this.roomId = other.roomId;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = safe(id);
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = safe(type);
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = safe(status);
+    }
+
+    public double getCurrentValue() {
+        return currentValue;
+    }
+
+    public void setCurrentValue(double currentValue) {
+        this.currentValue = currentValue;
+    }
+
+    public String getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(String roomId) {
+        this.roomId = safe(roomId);
+    }
+
+    private String safe(String value) {
+        return value == null ? null : value.trim();
+    }
+}
